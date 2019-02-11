@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhaleNotificationCenterExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsA-nV-3ry">
+                                <rect key="frame" x="20" y="80" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6fp-lJ-8th"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCq-BI-zMD">
+                                <rect key="frame" x="100" y="160" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.022138238886508559" green="0.3490602970123291" blue="0.015870537666661088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XK7-2y-aRC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itg-d3-EQQ">
+                                <rect key="frame" x="100" y="211" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.3490602970123291" green="0.12421029559152587" blue="0.073157468069273493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dkc-HH-NEn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Itg-d3-EQQ" firstAttribute="leading" secondItem="UCq-BI-zMD" secondAttribute="leading" id="M6s-4t-tv4"/>
+                            <constraint firstItem="Itg-d3-EQQ" firstAttribute="trailing" secondItem="UCq-BI-zMD" secondAttribute="trailing" id="Pnq-UD-7vG"/>
+                            <constraint firstItem="UCq-BI-zMD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="U3a-jw-HdZ"/>
+                            <constraint firstItem="zsA-nV-3ry" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wtb-ul-GKo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zsA-nV-3ry" secondAttribute="trailing" constant="20" id="bzr-3N-TG4"/>
+                            <constraint firstItem="zsA-nV-3ry" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="fcX-Gd-NQD"/>
+                            <constraint firstItem="Itg-d3-EQQ" firstAttribute="height" secondItem="UCq-BI-zMD" secondAttribute="height" id="kt3-hv-dgp"/>
+                            <constraint firstItem="Itg-d3-EQQ" firstAttribute="width" secondItem="UCq-BI-zMD" secondAttribute="width" id="odl-3g-yiS"/>
+                            <constraint firstItem="Itg-d3-EQQ" firstAttribute="top" secondItem="UCq-BI-zMD" secondAttribute="bottom" constant="21" id="p5h-r6-e53"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UCq-BI-zMD" secondAttribute="trailing" constant="100" id="pYY-TZ-7Vt"/>
+                            <constraint firstItem="UCq-BI-zMD" firstAttribute="top" secondItem="zsA-nV-3ry" secondAttribute="bottom" constant="40" id="zb2-dx-mFc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="zsA-nV-3ry" id="YTb-lU-tbP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

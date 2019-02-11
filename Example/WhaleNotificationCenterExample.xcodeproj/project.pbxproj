@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346B44E722119E3C007AB3B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44E622119E3C007AB3B0 /* AppDelegate.swift */; };
+		346B44E922119E3C007AB3B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44E822119E3C007AB3B0 /* ViewController.swift */; };
+		346B44EC22119E3C007AB3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346B44EA22119E3C007AB3B0 /* Main.storyboard */; };
+		346B44EE22119E3D007AB3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346B44ED22119E3D007AB3B0 /* Assets.xcassets */; };
+		346B44F122119E3D007AB3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346B44EF22119E3D007AB3B0 /* LaunchScreen.storyboard */; };
+		346B44FC22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44FB22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.swift */; };
+		B6E720985FE9B61AD04844CE /* Pods_WhaleNotificationCenterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2D5B0606E1738706E987F0 /* Pods_WhaleNotificationCenterExample.framework */; };
+		FCC7623B5F7C56F8E1A9AB18 /* Pods_WhaleNotificationCenterExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF51B842D1B8CF8D618AC697 /* Pods_WhaleNotificationCenterExampleTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		346B44F822119E3D007AB3B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346B44DB22119E3C007AB3B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 346B44E222119E3C007AB3B0;
+			remoteInfo = WhaleNotificationCenterExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AB68F4D5A2D9C4606DC23C1 /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleNotificationCenterExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleNotificationCenterExampleTests/Pods-WhaleNotificationCenterExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B2D5B0606E1738706E987F0 /* Pods_WhaleNotificationCenterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleNotificationCenterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		346B44E322119E3C007AB3B0 /* WhaleNotificationCenterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleNotificationCenterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		346B44E622119E3C007AB3B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		346B44E822119E3C007AB3B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		346B44EB22119E3C007AB3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		346B44ED22119E3D007AB3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		346B44F022119E3D007AB3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		346B44F222119E3D007AB3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346B44F722119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhaleNotificationCenterExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		346B44FB22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleNotificationCenterExampleTests.swift; sourceTree = "<group>"; };
+		346B44FD22119E3D007AB3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772D693A70DE53AEA55BBC6F /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleNotificationCenterExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleNotificationCenterExampleTests/Pods-WhaleNotificationCenterExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77A6444255A0D51C6D92AB6A /* Pods-WhaleNotificationCenterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleNotificationCenterExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample.debug.xcconfig"; sourceTree = "<group>"; };
+		BF51B842D1B8CF8D618AC697 /* Pods_WhaleNotificationCenterExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleNotificationCenterExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0268F275F568CCCC8E29563 /* Pods-WhaleNotificationCenterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleNotificationCenterExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		346B44E022119E3C007AB3B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E720985FE9B61AD04844CE /* Pods_WhaleNotificationCenterExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346B44F422119E3D007AB3B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC7623B5F7C56F8E1A9AB18 /* Pods_WhaleNotificationCenterExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07CC9B1EF0290A701485FECF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B2D5B0606E1738706E987F0 /* Pods_WhaleNotificationCenterExample.framework */,
+				BF51B842D1B8CF8D618AC697 /* Pods_WhaleNotificationCenterExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		346B44DA22119E3C007AB3B0 = {
+			isa = PBXGroup;
+			children = (
+				346B44E522119E3C007AB3B0 /* WhaleNotificationCenterExample */,
+				346B44FA22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests */,
+				346B44E422119E3C007AB3B0 /* Products */,
+				B341E3BCBF220668CE1223E1 /* Pods */,
+				07CC9B1EF0290A701485FECF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		346B44E422119E3C007AB3B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				346B44E322119E3C007AB3B0 /* WhaleNotificationCenterExample.app */,
+				346B44F722119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		346B44E522119E3C007AB3B0 /* WhaleNotificationCenterExample */ = {
+			isa = PBXGroup;
+			children = (
+				346B44E622119E3C007AB3B0 /* AppDelegate.swift */,
+				346B44E822119E3C007AB3B0 /* ViewController.swift */,
+				346B44EA22119E3C007AB3B0 /* Main.storyboard */,
+				346B44ED22119E3D007AB3B0 /* Assets.xcassets */,
+				346B44EF22119E3D007AB3B0 /* LaunchScreen.storyboard */,
+				346B44F222119E3D007AB3B0 /* Info.plist */,
+			);
+			path = WhaleNotificationCenterExample;
+			sourceTree = "<group>";
+		};
+		346B44FA22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				346B44FB22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.swift */,
+				346B44FD22119E3D007AB3B0 /* Info.plist */,
+			);
+			path = WhaleNotificationCenterExampleTests;
+			sourceTree = "<group>";
+		};
+		B341E3BCBF220668CE1223E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77A6444255A0D51C6D92AB6A /* Pods-WhaleNotificationCenterExample.debug.xcconfig */,
+				E0268F275F568CCCC8E29563 /* Pods-WhaleNotificationCenterExample.release.xcconfig */,
+				772D693A70DE53AEA55BBC6F /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */,
+				1AB68F4D5A2D9C4606DC23C1 /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		346B44E222119E3C007AB3B0 /* WhaleNotificationCenterExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346B450022119E3D007AB3B0 /* Build configuration list for PBXNativeTarget "WhaleNotificationCenterExample" */;
+			buildPhases = (
+				6E339BF5990D81CC46379FD1 /* [CP] Check Pods Manifest.lock */,
+				346B44DF22119E3C007AB3B0 /* Sources */,
+				346B44E022119E3C007AB3B0 /* Frameworks */,
+				346B44E122119E3C007AB3B0 /* Resources */,
+				9EB70AB5FDFBF4B2BD8CA131 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhaleNotificationCenterExample;
+			productName = WhaleNotificationCenterExample;
+			productReference = 346B44E322119E3C007AB3B0 /* WhaleNotificationCenterExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		346B44F622119E3D007AB3B0 /* WhaleNotificationCenterExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346B450322119E3D007AB3B0 /* Build configuration list for PBXNativeTarget "WhaleNotificationCenterExampleTests" */;
+			buildPhases = (
+				8AF89C80454634A2624624D7 /* [CP] Check Pods Manifest.lock */,
+				346B44F322119E3D007AB3B0 /* Sources */,
+				346B44F422119E3D007AB3B0 /* Frameworks */,
+				346B44F522119E3D007AB3B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				346B44F922119E3D007AB3B0 /* PBXTargetDependency */,
+			);
+			name = WhaleNotificationCenterExampleTests;
+			productName = WhaleNotificationCenterExampleTests;
+			productReference = 346B44F722119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		346B44DB22119E3C007AB3B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Rahmi Bozdag";
+				TargetAttributes = {
+					346B44E222119E3C007AB3B0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					346B44F622119E3D007AB3B0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 346B44E222119E3C007AB3B0;
+					};
+				};
+			};
+			buildConfigurationList = 346B44DE22119E3C007AB3B0 /* Build configuration list for PBXProject "WhaleNotificationCenterExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 346B44DA22119E3C007AB3B0;
+			productRefGroup = 346B44E422119E3C007AB3B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				346B44E222119E3C007AB3B0 /* WhaleNotificationCenterExample */,
+				346B44F622119E3D007AB3B0 /* WhaleNotificationCenterExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		346B44E122119E3C007AB3B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346B44F122119E3D007AB3B0 /* LaunchScreen.storyboard in Resources */,
+				346B44EE22119E3D007AB3B0 /* Assets.xcassets in Resources */,
+				346B44EC22119E3C007AB3B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346B44F522119E3D007AB3B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E339BF5990D81CC46379FD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhaleNotificationCenterExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF89C80454634A2624624D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhaleNotificationCenterExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EB70AB5FDFBF4B2BD8CA131 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WhaleNotificationCenter/WhaleNotificationCenter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhaleNotificationCenter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		346B44DF22119E3C007AB3B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346B44E922119E3C007AB3B0 /* ViewController.swift in Sources */,
+				346B44E722119E3C007AB3B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346B44F322119E3D007AB3B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346B44FC22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		346B44F922119E3D007AB3B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 346B44E222119E3C007AB3B0 /* WhaleNotificationCenterExample */;
+			targetProxy = 346B44F822119E3D007AB3B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		346B44EA22119E3C007AB3B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				346B44EB22119E3C007AB3B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		346B44EF22119E3D007AB3B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				346B44F022119E3D007AB3B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		346B44FE22119E3D007AB3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		346B44FF22119E3D007AB3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		346B450122119E3D007AB3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A6444255A0D51C6D92AB6A /* Pods-WhaleNotificationCenterExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3P7G5P8N;
+				INFOPLIST_FILE = WhaleNotificationCenterExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bozdag.rahmi.WhaleNotificationCenterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		346B450222119E3D007AB3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0268F275F568CCCC8E29563 /* Pods-WhaleNotificationCenterExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3P7G5P8N;
+				INFOPLIST_FILE = WhaleNotificationCenterExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bozdag.rahmi.WhaleNotificationCenterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		346B450422119E3D007AB3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772D693A70DE53AEA55BBC6F /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3P7G5P8N;
+				INFOPLIST_FILE = WhaleNotificationCenterExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bozdag.rahmi.WhaleNotificationCenterExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhaleNotificationCenterExample.app/WhaleNotificationCenterExample";
+			};
+			name = Debug;
+		};
+		346B450522119E3D007AB3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB68F4D5A2D9C4606DC23C1 /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3P7G5P8N;
+				INFOPLIST_FILE = WhaleNotificationCenterExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bozdag.rahmi.WhaleNotificationCenterExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhaleNotificationCenterExample.app/WhaleNotificationCenterExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		346B44DE22119E3C007AB3B0 /* Build configuration list for PBXProject "WhaleNotificationCenterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346B44FE22119E3D007AB3B0 /* Debug */,
+				346B44FF22119E3D007AB3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346B450022119E3D007AB3B0 /* Build configuration list for PBXNativeTarget "WhaleNotificationCenterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346B450122119E3D007AB3B0 /* Debug */,
+				346B450222119E3D007AB3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346B450322119E3D007AB3B0 /* Build configuration list for PBXNativeTarget "WhaleNotificationCenterExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346B450422119E3D007AB3B0 /* Debug */,
+				346B450522119E3D007AB3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 346B44DB22119E3C007AB3B0 /* Project object */;
+}
