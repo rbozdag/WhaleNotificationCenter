@@ -21,23 +21,24 @@ pod 'WhaleNotificationCenter', :git => 'https://github.com/rbozdag/WhaleNotifica
 
 ## Usage
 
-Firstly, import `WhaleNotificationCenter`.
+First, import `WhaleNotificationCenter`.
 
 ```swift
 import WhaleNotificationCenter
 ```
+
 
 ```swift
 extension <yourClass or yourStruct or yourEnum>: WhaleNotifiable { }
 ```
 
 ### Example
-
-Before conform 'WhaleNotifiable' protocol.
+Conform to 'WhaleNotifiable' protocol.
 ```swift
 struct User: WhaleNotifiable {
     let name: String
 }
+
 
 enum LoginStatus: WhaleNotifiable {
     case login(User)
@@ -45,7 +46,7 @@ enum LoginStatus: WhaleNotifiable {
 }
 ```
 
-Observe LoginStatus
+Observe LoginStatus.
 ```swift
 LoginStatus.observe(target: self) { [weak self] loginStatus in
     switch loginStatus {
@@ -57,7 +58,7 @@ LoginStatus.observe(target: self) { [weak self] loginStatus in
 }
 ```
 
-finally broadcast
+Finally broadcast.
 ```swift
 let user = User(name: "user_name")
 LoginStatus.login(user).broadcast()
