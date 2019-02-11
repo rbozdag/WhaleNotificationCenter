@@ -28,5 +28,21 @@ import WhaleNotificationCenter
 ```
 
 ```swift
-extension <<yourClass or yourStruct or yourEnum>>: WhaleNotifiable { }
+extension <yourClass or yourStruct or yourEnum>: WhaleNotifiable { }
 ```
+
+### Example
+
+Before conform 'WhaleNotifiable' protocol.
+```swift
+struct User: WhaleNotifiable {
+    let name: String
+}
+
+enum LoginStatus: WhaleNotifiable {
+    case login(User)
+    case logout
+}
+```
+
+
