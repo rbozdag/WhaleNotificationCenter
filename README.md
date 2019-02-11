@@ -18,3 +18,15 @@ use_frameworks!
 
 pod 'WhaleNotificationCenter', :git => 'https://github.com/rbozdag/WhaleNotificationCenter.git'
 ```
+
+## Usage
+
+Firstly, import `WhaleNotificationCenter`.
+
+```swift
+import WhaleNotificationCenter
+```
+
+```swift
+extension <YourModel>: WhaleNotifiable { }
+```
