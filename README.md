@@ -28,5 +28,5 @@ import WhaleNotificationCenter
 ```
 
 ```swift
-extension <yourClass or yourStruct or yourEnum>: WhaleNotifiable { }
+extension <<yourClass or yourStruct or yourEnum>>: WhaleNotifiable { }
 ```
