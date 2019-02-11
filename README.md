@@ -45,4 +45,21 @@ enum LoginStatus: WhaleNotifiable {
 }
 ```
 
+Observe LoginStatus
+```swift
+LoginStatus.observe(target: self) { [weak self] loginStatus in
+    switch loginStatus {
+    case .login(let user):
+        self?.label.text = "Login: " + user.name
+    case .logout:
+        self?.label.text = "Logout"
+    }
+}
+```
+
+finally broadcast
+```swift
+let user = User(name: "user_name")
+LoginStatus.login(user).broadcast()
+```
 
