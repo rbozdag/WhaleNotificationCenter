@@ -20,7 +20,7 @@ Swift NSNotificationCenter Fix Library
                        DESC
 
   s.homepage         = 'https://github.com/rbozdag'
-  s.license          = { :type => "BSD", :file => "LICENSE" }
+  s.license          = { :type => "BSD", :file => "LICENSE.md" }
   s.author           = { 'rbozdag' => 'bozdag.rahmi@gmail.com' }
   s.source           = { :git => "https://github.com/rbozdag/WhaleNotificationCenter.git", :tag => "#{s.version}" }
 
