@@ -35,7 +35,7 @@ extension <yourClass or yourStruct or yourEnum>: WhaleNotifiable { }
 ### Example
 Conform to 'WhaleNotifiable' protocol.
 ```swift
-struct User: WhaleNotifiable {
+struct User {
     let name: String
 }
 
