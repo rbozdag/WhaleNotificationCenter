@@ -9,11 +9,13 @@
 import Foundation
 
 public protocol WhaleNotifiable {
-    associatedtype ObservedType
+    associatedtype ObservedValueType
+
+    static func decode(notification: Notification) -> ObservedValueType?
 
     static var notificationName: NSNotification.Name { get }
 
-    static func observe(disposeBag: WhaleNotificationDisposeBagManager, router: WhaleNotificationRouter.Type, target: AnyObject, handler: @escaping (ObservedType) -> ())
+    static func observe(target: AnyObject, handler: @escaping (ObservedValueType) -> ())
 
     func broadcast()
 }

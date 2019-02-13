@@ -7,7 +7,7 @@ target 'WhaleNotificationCenterExample' do
 
   # Pods for WhaleNotificationCenterExample
 
-  pod 'WhaleNotificationCenter', :git => 'https://github.com/rbozdag/WhaleNotificationCenter.git'
+  # pod 'WhaleNotificationCenter', :git => 'https://github.com/rbozdag/WhaleNotificationCenter.git'
 
   target 'WhaleNotificationCenterExampleTests' do
     inherit! :search_paths

@@ -22,7 +22,7 @@ class WhaleNotificationCenterTests: XCTestCase {
 
         let user = User(name: "test_user")
         user.broadcast()
-        self.waitForExpectations(timeout: 1) { _ in }
+        self.waitForExpectations(timeout: 4) { _ in }
     }
 
     func testTargetRetainCycle() {
@@ -49,14 +49,12 @@ class WhaleNotificationCenterTests: XCTestCase {
     func testDisposeBagRetainCycle() {
         var notificationExpectation: XCTestExpectation? = expectation(description: "DisposeBagRetainCycleExpectation")
 
-        let dummyDisposeBag = DummyDisposeBagManager()
-
         var dummyObserver: DummyObserver? = DummyObserver(name: "dummy_observer", deinitListener: {
             notificationExpectation?.fulfill()
             notificationExpectation = nil
         })
 
-        User.observe(disposeBag: dummyDisposeBag, target: dummyObserver!) { _ in }
+        User.observe(target: dummyObserver!) { _ in }
         dummyObserver = nil
 
         User(name: "test_user").broadcast()
@@ -65,7 +63,31 @@ class WhaleNotificationCenterTests: XCTestCase {
             if error != nil {
                 XCTFail("Observer target is not deallocated")
             } else {
-                XCTAssert(dummyDisposeBag.disposeBag.count == 0, "disposeBag must be zero because there is no observer.")
+                XCTAssert(DefaultWhaleNotificationDisposeBagManager.shared.getAliveTargetCount() == 0, "disposeBag must be zero because there is no observer.")
+            }
+        }
+    }
+
+    func testKeyboardNotification() {
+        var notificationExpectation: XCTestExpectation? = expectation(description: "testKeyboardNotificationExpectation")
+
+        XCTAssertTrue(KeyboardNotifications.DidChangeFrame.notificationName == UIResponder.keyboardDidChangeFrameNotification)
+        XCTAssertTrue(KeyboardNotifications.DidHide.notificationName == UIResponder.keyboardDidHideNotification)
+        XCTAssertTrue(KeyboardNotifications.DidShow.notificationName == UIResponder.keyboardDidShowNotification)
+        XCTAssertTrue(KeyboardNotifications.WillChangeFrame.notificationName == UIResponder.keyboardWillChangeFrameNotification)
+        XCTAssertTrue(KeyboardNotifications.WillHide.notificationName == UIResponder.keyboardWillHideNotification)
+        XCTAssertTrue(KeyboardNotifications.WillShow.notificationName == UIResponder.keyboardWillShowNotification)
+        
+        KeyboardNotifications.WillShow.observe(target: self) { data in
+            notificationExpectation?.fulfill()
+            notificationExpectation = nil
+        }
+
+        KeyboardNotifications.WillShow().broadcast()
+        
+        self.waitForExpectations(timeout: 1) { error in
+            if error != nil {
+                XCTFail("KeyboardNotifications.WillShow not handled")
             }
         }
     }
