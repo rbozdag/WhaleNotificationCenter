@@ -16,6 +16,8 @@ public protocol WhaleNotifiable {
     static var notificationName: NSNotification.Name { get }
 
     static func observe(target: AnyObject, handler: @escaping (ObservedValueType) -> ())
+    static func observe(target: AnyObject, handler: @escaping () -> ())
+
 
     func broadcast()
 }

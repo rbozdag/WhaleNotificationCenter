@@ -21,9 +21,14 @@ public extension WhaleNotifiable {
     public func broadcast() {
         NotificationCenter.default.post(name: Self.notificationName, object: self, userInfo: userInfo)
     }
-    
+
     public static func observe(target: AnyObject, handler: @escaping (ObservedValueType) -> ()) {
-        let router = DefaultWhaleNotificationRouter(disposeBag: DefaultWhaleNotificationDisposeBagManager.shared, target: target, decoder: decode, action: handler)
+        let router = DefaultWhaleNotificationRouter(disposeBag: DefaultWhaleNotificationDisposeBagManager.shared, target: target, decoder: decode, actionWithPrm: handler, actionWithoutPrm: nil)
+        NotificationCenter.default.addObserver(router, selector: Selector(("onNotificationHandled:")), name: notificationName, object: nil)
+    }
+
+    public static func observe(target: AnyObject, handler: @escaping () -> ()) {
+        let router = DefaultWhaleNotificationRouter(disposeBag: DefaultWhaleNotificationDisposeBagManager.shared, target: target, decoder: decode, actionWithPrm: nil, actionWithoutPrm: handler)
         NotificationCenter.default.addObserver(router, selector: Selector(("onNotificationHandled:")), name: notificationName, object: nil)
     }
 
@@ -34,7 +39,7 @@ public extension WhaleNotifiable {
 
 public extension WhaleNotifiable where Self == ObservedValueType {
     public static func observe(target: AnyObject, handler: @escaping (Self) -> ()) {
-        let router = DefaultWhaleNotificationRouter(disposeBag: DefaultWhaleNotificationDisposeBagManager.shared, target: target, decoder: decode, action: handler)
+        let router = DefaultWhaleNotificationRouter(disposeBag: DefaultWhaleNotificationDisposeBagManager.shared, target: target, decoder: decode, actionWithPrm: handler, actionWithoutPrm: nil)
         NotificationCenter.default.addObserver(router, selector: Selector(("onNotificationHandled:")), name: notificationName, object: nil)
     }
 }

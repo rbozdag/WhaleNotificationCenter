@@ -12,7 +12,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WhaleNotificationCenter'
-  s.version          = '1.1.2'
+  s.version          = '1.2.0'
   s.summary          = 'Swift NSNotificationCenter Fix Library'
 
   s.description      = <<-DESC

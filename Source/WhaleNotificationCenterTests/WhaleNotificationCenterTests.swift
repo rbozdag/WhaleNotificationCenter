@@ -71,23 +71,41 @@ class WhaleNotificationCenterTests: XCTestCase {
     func testKeyboardNotification() {
         var notificationExpectation: XCTestExpectation? = expectation(description: "testKeyboardNotificationExpectation")
 
-        XCTAssertTrue(KeyboardNotifications.DidChangeFrame.notificationName == UIResponder.keyboardDidChangeFrameNotification)
-        XCTAssertTrue(KeyboardNotifications.DidHide.notificationName == UIResponder.keyboardDidHideNotification)
-        XCTAssertTrue(KeyboardNotifications.DidShow.notificationName == UIResponder.keyboardDidShowNotification)
-        XCTAssertTrue(KeyboardNotifications.WillChangeFrame.notificationName == UIResponder.keyboardWillChangeFrameNotification)
-        XCTAssertTrue(KeyboardNotifications.WillHide.notificationName == UIResponder.keyboardWillHideNotification)
-        XCTAssertTrue(KeyboardNotifications.WillShow.notificationName == UIResponder.keyboardWillShowNotification)
+        XCTAssertTrue(KeyboardNotifications.didChangeFrame.notificationName == UIResponder.keyboardDidChangeFrameNotification)
+        XCTAssertTrue(KeyboardNotifications.didHide.notificationName == UIResponder.keyboardDidHideNotification)
+        XCTAssertTrue(KeyboardNotifications.didShow.notificationName == UIResponder.keyboardDidShowNotification)
+        XCTAssertTrue(KeyboardNotifications.willChangeFrame.notificationName == UIResponder.keyboardWillChangeFrameNotification)
+        XCTAssertTrue(KeyboardNotifications.willHide.notificationName == UIResponder.keyboardWillHideNotification)
+        XCTAssertTrue(KeyboardNotifications.willShow.notificationName == UIResponder.keyboardWillShowNotification)
         
-        KeyboardNotifications.WillShow.observe(target: self) { data in
+        KeyboardNotifications.willShow.observe(target: self) { data in
             notificationExpectation?.fulfill()
             notificationExpectation = nil
         }
 
-        KeyboardNotifications.WillShow().broadcast()
+        KeyboardNotifications.willShow().broadcast()
         
         self.waitForExpectations(timeout: 1) { error in
             if error != nil {
                 XCTFail("KeyboardNotifications.WillShow not handled")
+            }
+        }
+        
+    }
+    
+    func testUIApplicationNotification() {
+        var notificationExpectation: XCTestExpectation? = expectation(description: "testUIApplicationNotificationExpectation")
+        
+        UIApplicationNotifications.didBecomeActive.observe(target: self) {
+            notificationExpectation?.fulfill()
+            notificationExpectation = nil
+        }
+        
+        UIApplicationNotifications.didBecomeActive().broadcast()
+        
+        self.waitForExpectations(timeout: 1) { error in
+            if error != nil {
+                XCTFail(" UIApplicationNotifications.didBecomeActivenot handled")
             }
         }
     }
