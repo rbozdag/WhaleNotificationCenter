@@ -12,5 +12,5 @@ public protocol WhaleNotificationRouter: class {
     var isTargetAlive: () -> Bool { get }
     func onNotificationHandled(_ notification: Notification)
 
-    init<T>(disposeBag: WhaleNotificationDisposeBagManager, target: AnyObject, action: @escaping (T) -> ())
+    init<T>(disposeBag: WhaleNotificationDisposeBagManager, target: AnyObject, decoder: @escaping (Notification) -> T?, action: @escaping (T) -> ())
 }

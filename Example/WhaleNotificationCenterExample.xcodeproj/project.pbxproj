@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3424FC0522143C9400A60D3A /* DefaultWhaleDisposeBagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424FBF822143C9400A60D3A /* DefaultWhaleDisposeBagManager.swift */; };
+		3424FC0622143C9400A60D3A /* WhaleNotificationDisposeBagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424FBF922143C9400A60D3A /* WhaleNotificationDisposeBagManager.swift */; };
+		3424FC0722143C9400A60D3A /* WhaleNotifiable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424FBFC22143C9400A60D3A /* WhaleNotifiable+Extension.swift */; };
+		3424FC0822143C9400A60D3A /* WhaleNotifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424FBFD22143C9400A60D3A /* WhaleNotifiable.swift */; };
+		3424FC0A22143C9400A60D3A /* KeyboardStatusNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424FC0122143C9400A60D3A /* KeyboardStatusNotifications.swift */; };
+		3424FC0B22143C9400A60D3A /* DefaultWhaleNotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424FC0322143C9400A60D3A /* DefaultWhaleNotificationRouter.swift */; };
+		3424FC0C22143C9400A60D3A /* WhaleNotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424FC0422143C9400A60D3A /* WhaleNotificationRouter.swift */; };
 		346B44E722119E3C007AB3B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44E622119E3C007AB3B0 /* AppDelegate.swift */; };
 		346B44E922119E3C007AB3B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44E822119E3C007AB3B0 /* ViewController.swift */; };
 		346B44EC22119E3C007AB3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346B44EA22119E3C007AB3B0 /* Main.storyboard */; };
 		346B44EE22119E3D007AB3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346B44ED22119E3D007AB3B0 /* Assets.xcassets */; };
 		346B44F122119E3D007AB3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346B44EF22119E3D007AB3B0 /* LaunchScreen.storyboard */; };
 		346B44FC22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44FB22119E3D007AB3B0 /* WhaleNotificationCenterExampleTests.swift */; };
-		B6E720985FE9B61AD04844CE /* Pods_WhaleNotificationCenterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2D5B0606E1738706E987F0 /* Pods_WhaleNotificationCenterExample.framework */; };
-		FCC7623B5F7C56F8E1A9AB18 /* Pods_WhaleNotificationCenterExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF51B842D1B8CF8D618AC697 /* Pods_WhaleNotificationCenterExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +32,39 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3424FBF222143B7000A60D3A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3424FBF522143BA600A60D3A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1AB68F4D5A2D9C4606DC23C1 /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleNotificationCenterExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleNotificationCenterExampleTests/Pods-WhaleNotificationCenterExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		1B2D5B0606E1738706E987F0 /* Pods_WhaleNotificationCenterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleNotificationCenterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3424FBF822143C9400A60D3A /* DefaultWhaleDisposeBagManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultWhaleDisposeBagManager.swift; sourceTree = "<group>"; };
+		3424FBF922143C9400A60D3A /* WhaleNotificationDisposeBagManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhaleNotificationDisposeBagManager.swift; sourceTree = "<group>"; };
+		3424FBFA22143C9400A60D3A /* WhaleNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhaleNotificationCenter.h; sourceTree = "<group>"; };
+		3424FBFC22143C9400A60D3A /* WhaleNotifiable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WhaleNotifiable+Extension.swift"; sourceTree = "<group>"; };
+		3424FBFD22143C9400A60D3A /* WhaleNotifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhaleNotifiable.swift; sourceTree = "<group>"; };
+		3424FBFF22143C9400A60D3A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3424FC0122143C9400A60D3A /* KeyboardStatusNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardStatusNotifications.swift; sourceTree = "<group>"; };
+		3424FC0322143C9400A60D3A /* DefaultWhaleNotificationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultWhaleNotificationRouter.swift; sourceTree = "<group>"; };
+		3424FC0422143C9400A60D3A /* WhaleNotificationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhaleNotificationRouter.swift; sourceTree = "<group>"; };
 		346B44E322119E3C007AB3B0 /* WhaleNotificationCenterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleNotificationCenterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		346B44E622119E3C007AB3B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		346B44E822119E3C007AB3B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +77,6 @@
 		346B44FD22119E3D007AB3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772D693A70DE53AEA55BBC6F /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleNotificationCenterExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleNotificationCenterExampleTests/Pods-WhaleNotificationCenterExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77A6444255A0D51C6D92AB6A /* Pods-WhaleNotificationCenterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleNotificationCenterExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample.debug.xcconfig"; sourceTree = "<group>"; };
-		BF51B842D1B8CF8D618AC697 /* Pods_WhaleNotificationCenterExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleNotificationCenterExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0268F275F568CCCC8E29563 /* Pods-WhaleNotificationCenterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleNotificationCenterExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E720985FE9B61AD04844CE /* Pods_WhaleNotificationCenterExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC7623B5F7C56F8E1A9AB18 /* Pods_WhaleNotificationCenterExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,10 +101,65 @@
 		07CC9B1EF0290A701485FECF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B2D5B0606E1738706E987F0 /* Pods_WhaleNotificationCenterExample.framework */,
-				BF51B842D1B8CF8D618AC697 /* Pods_WhaleNotificationCenterExampleTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3424FBF622143C9400A60D3A /* WhaleNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3424FBF722143C9400A60D3A /* DisposeBag */,
+				3424FBFA22143C9400A60D3A /* WhaleNotificationCenter.h */,
+				3424FBFB22143C9400A60D3A /* Notification */,
+				3424FBFE22143C9400A60D3A /* Resources */,
+				3424FC0022143C9400A60D3A /* Keyboard */,
+				3424FC0222143C9400A60D3A /* Router */,
+			);
+			name = WhaleNotificationCenter;
+			path = ../../Source/WhaleNotificationCenter;
+			sourceTree = "<group>";
+		};
+		3424FBF722143C9400A60D3A /* DisposeBag */ = {
+			isa = PBXGroup;
+			children = (
+				3424FBF822143C9400A60D3A /* DefaultWhaleDisposeBagManager.swift */,
+				3424FBF922143C9400A60D3A /* WhaleNotificationDisposeBagManager.swift */,
+			);
+			path = DisposeBag;
+			sourceTree = "<group>";
+		};
+		3424FBFB22143C9400A60D3A /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				3424FBFC22143C9400A60D3A /* WhaleNotifiable+Extension.swift */,
+				3424FBFD22143C9400A60D3A /* WhaleNotifiable.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		3424FBFE22143C9400A60D3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3424FBFF22143C9400A60D3A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3424FC0022143C9400A60D3A /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3424FC0122143C9400A60D3A /* KeyboardStatusNotifications.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		3424FC0222143C9400A60D3A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3424FC0322143C9400A60D3A /* DefaultWhaleNotificationRouter.swift */,
+				3424FC0422143C9400A60D3A /* WhaleNotificationRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		346B44DA22119E3C007AB3B0 = {
@@ -98,6 +185,7 @@
 		346B44E522119E3C007AB3B0 /* WhaleNotificationCenterExample */ = {
 			isa = PBXGroup;
 			children = (
+				3424FBF622143C9400A60D3A /* WhaleNotificationCenter */,
 				346B44E622119E3C007AB3B0 /* AppDelegate.swift */,
 				346B44E822119E3C007AB3B0 /* ViewController.swift */,
 				346B44EA22119E3C007AB3B0 /* Main.storyboard */,
@@ -139,7 +227,8 @@
 				346B44DF22119E3C007AB3B0 /* Sources */,
 				346B44E022119E3C007AB3B0 /* Frameworks */,
 				346B44E122119E3C007AB3B0 /* Resources */,
-				9EB70AB5FDFBF4B2BD8CA131 /* [CP] Embed Pods Frameworks */,
+				3424FBF222143B7000A60D3A /* CopyFiles */,
+				3424FBF522143BA600A60D3A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,28 +361,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9EB70AB5FDFBF4B2BD8CA131 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WhaleNotificationCenter/WhaleNotificationCenter.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhaleNotificationCenter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -301,8 +368,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3424FC0522143C9400A60D3A /* DefaultWhaleDisposeBagManager.swift in Sources */,
 				346B44E922119E3C007AB3B0 /* ViewController.swift in Sources */,
+				3424FC0822143C9400A60D3A /* WhaleNotifiable.swift in Sources */,
+				3424FC0A22143C9400A60D3A /* KeyboardStatusNotifications.swift in Sources */,
+				3424FC0C22143C9400A60D3A /* WhaleNotificationRouter.swift in Sources */,
 				346B44E722119E3C007AB3B0 /* AppDelegate.swift in Sources */,
+				3424FC0B22143C9400A60D3A /* DefaultWhaleNotificationRouter.swift in Sources */,
+				3424FC0722143C9400A60D3A /* WhaleNotifiable+Extension.swift in Sources */,
+				3424FC0622143C9400A60D3A /* WhaleNotificationDisposeBagManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

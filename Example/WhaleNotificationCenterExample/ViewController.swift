@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import WhaleNotificationCenter
 
 class ViewController: UIViewController {
 
@@ -25,6 +24,34 @@ class ViewController: UIViewController {
                 self?.label.text = "Logout"
             }
         }
+
+        KeyboardNotifications.DidChangeFrame.observe(target: self) { [weak self] data in
+            self?.label.text = "Keyboard DidChangeFrame"
+        }
+        
+        KeyboardNotifications.DidHide.observe(target: self) { [weak self] data in
+            self?.label.text = "Keyboard DidHide"
+        }
+        
+        KeyboardNotifications.DidShow.observe(target: self) { [weak self] data in
+            self?.label.text = "Keyboard DidShow"
+        }
+        
+        KeyboardNotifications.WillChangeFrame.observe(target: self) { [weak self] data in
+            self?.label.text = "Keyboard WillChangeFrame"
+        }
+        
+        KeyboardNotifications.WillHide.observe(target: self) { [weak self] data in
+            self?.label.text = "Keyboard WillHide"
+        }
+        
+        KeyboardNotifications.WillShow.observe(target: self) { [weak self] data in
+            self?.label.text = "Keyboard WillShow"
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) { [weak self] in
+            self?.view.endEditing(true)
+        }
     }
 
     @IBAction func loginAction(_ sender: Any?) {
@@ -37,6 +64,7 @@ class ViewController: UIViewController {
     @IBAction func logoutAction(_ sender: Any?) {
         LoginStatus.logout.broadcast()
     }
+
 }
 
 struct User: WhaleNotifiable {

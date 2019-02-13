@@ -9,6 +9,6 @@
 import Foundation
 
 public protocol WhaleNotificationDisposeBagManager: class {
-    func addToDisposeBag(_ handler: WhaleNotificationRouter)
+    func addToDisposeBag(_ router: WhaleNotificationRouter)
     func dispose()
 }

@@ -9,14 +9,16 @@
 import Foundation
 
 public final class DefaultWhaleNotificationDisposeBagManager: WhaleNotificationDisposeBagManager {
-    public static var shared: WhaleNotificationDisposeBagManager = DefaultWhaleNotificationDisposeBagManager()
+    public static var shared: DefaultWhaleNotificationDisposeBagManager = DefaultWhaleNotificationDisposeBagManager()
 
     private let serialQueue = DispatchQueue.init(label: "DefaultWhaleNotificationDisposeBagManagerSerialQueue")
     private var disposeBag = Array<WhaleNotificationRouter>()
 
-    public func addToDisposeBag(_ handler: WhaleNotificationRouter) {
+    public init() { }
+
+    public func addToDisposeBag(_ router: WhaleNotificationRouter) {
         serialQueue.async { [weak self] in
-            self?.disposeBag.append(handler)
+            self?.disposeBag.append(router)
         }
     }
 
@@ -26,5 +28,9 @@ public final class DefaultWhaleNotificationDisposeBagManager: WhaleNotificationD
                 return !handler.isTargetAlive()
             }
         }
+    }
+
+    public func getAliveTargetCount() -> Int {
+        return disposeBag.filter { $0.isTargetAlive() }.count
     }
 }

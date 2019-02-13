@@ -9,12 +9,12 @@
 import Foundation
 
 public final class DefaultWhaleNotificationRouter: WhaleNotificationRouter {
-    private let action: (Any?) -> ()
+    private let action: (Notification) -> ()
     public let isTargetAlive: () -> Bool
 
-    public init<T>(disposeBag: WhaleNotificationDisposeBagManager, target: AnyObject, action: @escaping (T) -> ()) {
-        self.action = { [weak target, weak disposeBag] observedValue in
-            if target != nil, let observedValue = observedValue as? T {
+    public init<T>(disposeBag: WhaleNotificationDisposeBagManager, target: AnyObject, decoder: @escaping (Notification) -> T?, action: @escaping (T) -> ()) {
+        self.action = { [weak target, weak disposeBag] notification in
+            if target != nil, let observedValue = decoder(notification) {
                 action(observedValue)
             } else {
                 disposeBag?.dispose()
@@ -29,7 +29,7 @@ public final class DefaultWhaleNotificationRouter: WhaleNotificationRouter {
     }
 
     @objc public func onNotificationHandled(_ notification: Notification) {
-        action(notification.object)
+        action(notification)
     }
 
     deinit { print("deinit WhaleNotificationRouter") }

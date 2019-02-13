@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3424FBEF2214387000A60D3A /* KeyboardStatusNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347F262A2213D42F001EC90C /* KeyboardStatusNotifications.swift */; };
 		346B44B022116412007AB3B0 /* WhaleNotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346B44A622116412007AB3B0 /* WhaleNotificationCenter.framework */; };
 		346B44B522116412007AB3B0 /* WhaleNotificationCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44B422116412007AB3B0 /* WhaleNotificationCenterTests.swift */; };
 		346B44B722116412007AB3B0 /* WhaleNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 346B44A922116412007AB3B0 /* WhaleNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 		346B44D722118977007AB3B0 /* WhaleNotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44D622118977007AB3B0 /* WhaleNotificationRouter.swift */; };
 		346B44D822118977007AB3B0 /* WhaleNotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44D622118977007AB3B0 /* WhaleNotificationRouter.swift */; };
 		346B44D922118B89007AB3B0 /* DefaultWhaleNotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B44C32211650A007AB3B0 /* DefaultWhaleNotificationRouter.swift */; };
+		347F262B2213D42F001EC90C /* KeyboardStatusNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347F262A2213D42F001EC90C /* KeyboardStatusNotifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		346B44CB221168B4007AB3B0 /* TestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModels.swift; sourceTree = "<group>"; };
 		346B44D2221182B8007AB3B0 /* DefaultWhaleDisposeBagManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWhaleDisposeBagManager.swift; sourceTree = "<group>"; };
 		346B44D622118977007AB3B0 /* WhaleNotificationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleNotificationRouter.swift; sourceTree = "<group>"; };
+		347F262A2213D42F001EC90C /* KeyboardStatusNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardStatusNotifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +94,8 @@
 		346B44A822116412007AB3B0 /* WhaleNotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
-				346B44D522118934007AB3B0 /* Handler */,
+				347F26292213D409001EC90C /* Keyboard */,
+				346B44D522118934007AB3B0 /* Router */,
 				346B44D12211829F007AB3B0 /* DisposeBag */,
 				346B44C8221167BD007AB3B0 /* Notification */,
 				346B44C022116430007AB3B0 /* Resources */,
@@ -136,13 +140,21 @@
 			path = DisposeBag;
 			sourceTree = "<group>";
 		};
-		346B44D522118934007AB3B0 /* Handler */ = {
+		346B44D522118934007AB3B0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
 				346B44D622118977007AB3B0 /* WhaleNotificationRouter.swift */,
 				346B44C32211650A007AB3B0 /* DefaultWhaleNotificationRouter.swift */,
 			);
-			path = Handler;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		347F26292213D409001EC90C /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				347F262A2213D42F001EC90C /* KeyboardStatusNotifications.swift */,
+			);
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +269,7 @@
 				346B44CA221167D3007AB3B0 /* WhaleNotifiable+Extension.swift in Sources */,
 				346B44D3221182B8007AB3B0 /* DefaultWhaleDisposeBagManager.swift in Sources */,
 				346B44C622116548007AB3B0 /* WhaleNotificationDisposeBagManager.swift in Sources */,
+				347F262B2213D42F001EC90C /* KeyboardStatusNotifications.swift in Sources */,
 				346B44C2221164CB007AB3B0 /* WhaleNotifiable.swift in Sources */,
 				346B44C42211650A007AB3B0 /* DefaultWhaleNotificationRouter.swift in Sources */,
 				346B44D722118977007AB3B0 /* WhaleNotificationRouter.swift in Sources */,
@@ -272,6 +285,7 @@
 				346B44D822118977007AB3B0 /* WhaleNotificationRouter.swift in Sources */,
 				346B44CD221168E3007AB3B0 /* WhaleNotifiable.swift in Sources */,
 				346B44D4221184FF007AB3B0 /* DefaultWhaleDisposeBagManager.swift in Sources */,
+				3424FBEF2214387000A60D3A /* KeyboardStatusNotifications.swift in Sources */,
 				346B44D922118B89007AB3B0 /* DefaultWhaleNotificationRouter.swift in Sources */,
 				346B44CC221168B4007AB3B0 /* TestModels.swift in Sources */,
 				346B44B522116412007AB3B0 /* WhaleNotificationCenterTests.swift in Sources */,
