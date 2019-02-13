@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct KeyboardNotifications {
+public struct KeyboardNotifications {
 
     public class KeyboardNotification {
         let animationCurveUserInfoKey: Int?
@@ -28,7 +28,7 @@ struct KeyboardNotifications {
     }
 
     public class WillShow: KeyboardNotification, WhaleNotifiable {
-        typealias ObservedValueType = KeyboardNotification
+        public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardWillShowNotification
 
@@ -38,7 +38,7 @@ struct KeyboardNotifications {
     }
 
     public class DidShow: KeyboardNotification, WhaleNotifiable {
-        typealias ObservedValueType = KeyboardNotification
+        public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardDidShowNotification
 
@@ -48,7 +48,7 @@ struct KeyboardNotifications {
     }
 
     public class WillHide: KeyboardNotification, WhaleNotifiable {
-        typealias ObservedValueType = KeyboardNotification
+        public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardWillHideNotification
 
@@ -58,7 +58,7 @@ struct KeyboardNotifications {
     }
 
     public class DidHide: KeyboardNotification, WhaleNotifiable {
-        typealias ObservedValueType = KeyboardNotification
+        public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardDidHideNotification
 
@@ -68,7 +68,7 @@ struct KeyboardNotifications {
     }
 
     public class DidChangeFrame: KeyboardNotification, WhaleNotifiable {
-        typealias ObservedValueType = KeyboardNotification
+        public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardDidChangeFrameNotification
 
@@ -78,7 +78,7 @@ struct KeyboardNotifications {
     }
 
     public class WillChangeFrame: KeyboardNotification, WhaleNotifiable {
-        typealias ObservedValueType = KeyboardNotification
+        public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardWillChangeFrameNotification
 
