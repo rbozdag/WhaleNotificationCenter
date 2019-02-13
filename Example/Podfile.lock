@@ -1,3 +1,21 @@
-PODFILE CHECKSUM: dd8b6f60c33ebeb45ab76aa8b9f90a27912d1c5e
+PODS:
+  - WhaleNotificationCenter (1.1.2)
+
+DEPENDENCIES:
+  - WhaleNotificationCenter (from `https://github.com/rbozdag/WhaleNotificationCenter.git`)
+
+EXTERNAL SOURCES:
+  WhaleNotificationCenter:
+    :git: https://github.com/rbozdag/WhaleNotificationCenter.git
+
+CHECKOUT OPTIONS:
+  WhaleNotificationCenter:
+    :commit: 295f3a54c45df2789f669f50a2205dadd01efc9d
+    :git: https://github.com/rbozdag/WhaleNotificationCenter.git
+
+SPEC CHECKSUMS:
+  WhaleNotificationCenter: 54511345a584add2c4904be0fdaf4ce7c4d92f03
+
+PODFILE CHECKSUM: 6abe8213ae0ea49d37d16717d3c940bee5f19dc7
 
 COCOAPODS: 1.6.0

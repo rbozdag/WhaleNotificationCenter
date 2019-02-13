@@ -7,53 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41C40291AC6A75581A21780EECEE141B /* Pods-WhaleNotificationCenterExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9D9EDDF9D62AE013CD35DB2D09656 /* Pods-WhaleNotificationCenterExampleTests-dummy.m */; };
-		644F85B550598ADDD4780E582C048368 /* Pods-WhaleNotificationCenterExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2C310B79FF09897327F615F8814 /* Pods-WhaleNotificationCenterExample-dummy.m */; };
-		ABA90CE3E37FB0B8E2A876B0F461B8A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		BECC39A382882537D4B3852D6161141C /* Pods-WhaleNotificationCenterExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC046B76113E1D2A72ABABBC69B4CD3 /* Pods-WhaleNotificationCenterExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0ACEE326753462ACB7BD5AE9E12AC6D /* Pods-WhaleNotificationCenterExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A30B24931826426C279DB9C3ABAEF22 /* Pods-WhaleNotificationCenterExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1007E1BC24347F9D24748020F85F808D /* DefaultWhaleNotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD1A61E2409F283B05E97552614479 /* DefaultWhaleNotificationRouter.swift */; };
+		32A2F062ED8D74F4D261443418A716C1 /* WhaleNotificationCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C11DAD5FEB7510D882DEDC55C0C24FA6 /* WhaleNotificationCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34D17B3597469ECE927DC40FF4704F1B /* WhaleNotifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3087B1EF28D59E030CD39907AB17462 /* WhaleNotifiable.swift */; };
+		3A85515813E25027F6D2DABC52D868B3 /* Pods-WhaleNotificationCenterExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E95ABEAF21C633AA4D1D3BBFC7C8CA /* Pods-WhaleNotificationCenterExample-dummy.m */; };
+		415A9DDC7AC2CAF14CB1E923DA44D978 /* DefaultWhaleDisposeBagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04011865675232620613A4A8E7568C2 /* DefaultWhaleDisposeBagManager.swift */; };
+		41C40291AC6A75581A21780EECEE141B /* Pods-WhaleNotificationCenterExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54E6138546953F7D1AA547ECB0E521F /* Pods-WhaleNotificationCenterExampleTests-dummy.m */; };
+		42B1112E7704EAACB0BEA31A45A9EF07 /* KeyboardStatusNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD4A026761C7FC5784646E2790AF9E /* KeyboardStatusNotifications.swift */; };
+		4ADC9C477CC030C9260DD68CA062E2F8 /* WhaleNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B48927C8659BEF11711BEC112B758FA /* WhaleNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A1FA3FE6B9DBD193EA8E4B8732CC3A9 /* Pods-WhaleNotificationCenterExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DAD7E890F10252A2276B7B6E64E745 /* Pods-WhaleNotificationCenterExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9011D6726F18574A78BCA3551ADD3662 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		A1AD366AAF99377496F7F8B2F791D79B /* WhaleNotificationDisposeBagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD2990482457BD1D208D182E9C30A1 /* WhaleNotificationDisposeBagManager.swift */; };
+		BECC39A382882537D4B3852D6161141C /* Pods-WhaleNotificationCenterExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A608171FE2622EF147DA4981E339D4 /* Pods-WhaleNotificationCenterExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDE12FEAD5F52388AA0B7207F5F3F151 /* WhaleNotifiable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13DC82FE18A5AA64874E78B3B34F7F /* WhaleNotifiable+Extension.swift */; };
 		E4F0E99E3ADDDFAC78822877551F619A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		E5EBB7DBDC9D7A51A307C974A80159A3 /* WhaleNotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B3AC1BDB471065B4C85A6AC87638E9 /* WhaleNotificationRouter.swift */; };
+		E775FB33EEAF81BF445DAF742BA7772D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		EE52204CEC933757C9A13C2119A8E9B8 /* WhaleNotificationCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DA3DE4F59971EC457A94AF8752551C /* WhaleNotificationCenter-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C6D1B8600D6C0610F6BF4708AE8C4048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0ED2A30E7425CFBDBD7FB09B61E9CCE;
+			remoteInfo = WhaleNotificationCenter;
+		};
 		F06C0E111918E304378901F416A12275 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EBA8B0C61867DA386B7287A0E4547642;
+			remoteGlobalIDString = C98E9AD2C2DE9002CFEB6BA4DF9C50ED;
 			remoteInfo = "Pods-WhaleNotificationCenterExample";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D176F017E5FBECB9BD30C187FFB09C1 /* Pods-WhaleNotificationCenterExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleNotificationCenterExample-Info.plist"; sourceTree = "<group>"; };
-		1AF508197DE1943E1AB221E93B85F9EC /* Pods-WhaleNotificationCenterExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleNotificationCenterExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2A30B24931826426C279DB9C3ABAEF22 /* Pods-WhaleNotificationCenterExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhaleNotificationCenterExample-umbrella.h"; sourceTree = "<group>"; };
-		3946AB1C244986E57EC6420350A55090 /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleNotificationCenterExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3BBCD66D4DB093F68DB8BE837835F7A9 /* Pods-WhaleNotificationCenterExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleNotificationCenterExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		58B9D9EDDF9D62AE013CD35DB2D09656 /* Pods-WhaleNotificationCenterExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhaleNotificationCenterExampleTests-dummy.m"; sourceTree = "<group>"; };
-		5B2C7068CC114068C2DC7F98280256C0 /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleNotificationCenterExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		6F8A986BC20F5E3423CE6C304C60FA2F /* Pods-WhaleNotificationCenterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleNotificationCenterExample.debug.xcconfig"; sourceTree = "<group>"; };
-		74AA3A95FDCBD3278C0B1F7AB0AB5D4D /* Pods-WhaleNotificationCenterExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhaleNotificationCenterExampleTests.modulemap"; sourceTree = "<group>"; };
-		7F1CA2C310B79FF09897327F615F8814 /* Pods-WhaleNotificationCenterExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhaleNotificationCenterExample-dummy.m"; sourceTree = "<group>"; };
-		91D6AB567D543137D07F90A55C674460 /* Pods_WhaleNotificationCenterExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhaleNotificationCenterExampleTests.framework; path = "Pods-WhaleNotificationCenterExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B53AD048D3BE40E1AFEAF7C6B9F078 /* Pods-WhaleNotificationCenterExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleNotificationCenterExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DAD2990482457BD1D208D182E9C30A1 /* WhaleNotificationDisposeBagManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhaleNotificationDisposeBagManager.swift; path = Source/WhaleNotificationCenter/DisposeBag/WhaleNotificationDisposeBagManager.swift; sourceTree = "<group>"; };
+		31A1E7E72FC677D43E06E057D794D37A /* Pods_WhaleNotificationCenterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhaleNotificationCenterExample.framework; path = "Pods-WhaleNotificationCenterExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DFDA6C7152361EA717DAAFA536D3E31 /* Pods-WhaleNotificationCenterExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleNotificationCenterExample-frameworks.sh"; sourceTree = "<group>"; };
+		3F44140DCF2F516369CE23A8B5CBD54A /* Pods-WhaleNotificationCenterExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleNotificationCenterExampleTests-Info.plist"; sourceTree = "<group>"; };
+		46B3AC1BDB471065B4C85A6AC87638E9 /* WhaleNotificationRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhaleNotificationRouter.swift; path = Source/WhaleNotificationCenter/Router/WhaleNotificationRouter.swift; sourceTree = "<group>"; };
+		605C9BAD6F188944869A9B6F70187D2E /* Pods-WhaleNotificationCenterExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleNotificationCenterExample-Info.plist"; sourceTree = "<group>"; };
+		637157B96839D63D56B229B22C6976BC /* WhaleNotificationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WhaleNotificationCenter.xcconfig; sourceTree = "<group>"; };
+		68CDE5ABD33B7139261AB3912DE4EEEB /* Pods-WhaleNotificationCenterExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhaleNotificationCenterExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6AFD1A61E2409F283B05E97552614479 /* DefaultWhaleNotificationRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultWhaleNotificationRouter.swift; path = Source/WhaleNotificationCenter/Router/DefaultWhaleNotificationRouter.swift; sourceTree = "<group>"; };
+		6FEB75103895DA20E947E434DD2A551D /* WhaleNotificationCenter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WhaleNotificationCenter-Info.plist"; sourceTree = "<group>"; };
+		770AA1017F4F1B4DC5BD26FC1B055E24 /* WhaleNotificationCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WhaleNotificationCenter.modulemap; sourceTree = "<group>"; };
+		85A608171FE2622EF147DA4981E339D4 /* Pods-WhaleNotificationCenterExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhaleNotificationCenterExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		85E95ABEAF21C633AA4D1D3BBFC7C8CA /* Pods-WhaleNotificationCenterExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhaleNotificationCenterExample-dummy.m"; sourceTree = "<group>"; };
+		9549C6FA84F8BF6A43F128157032CD15 /* Pods-WhaleNotificationCenterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleNotificationCenterExample.release.xcconfig"; sourceTree = "<group>"; };
+		960E83E3059E05F42DDEC6AB4766F441 /* Pods-WhaleNotificationCenterExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhaleNotificationCenterExampleTests.modulemap"; sourceTree = "<group>"; };
+		97804745F51DFEF1B5DCD63C86DC2D47 /* Pods-WhaleNotificationCenterExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhaleNotificationCenterExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B48927C8659BEF11711BEC112B758FA /* WhaleNotificationCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhaleNotificationCenter.h; path = Source/WhaleNotificationCenter/WhaleNotificationCenter.h; sourceTree = "<group>"; };
+		9D5F0E0901F73B99ABAC43AF632C137D /* Pods_WhaleNotificationCenterExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhaleNotificationCenterExampleTests.framework; path = "Pods-WhaleNotificationCenterExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B1D6B4589D2655C0BBCDEDF014FCB46B /* Pods_WhaleNotificationCenterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhaleNotificationCenterExample.framework; path = "Pods-WhaleNotificationCenterExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFC046B76113E1D2A72ABABBC69B4CD3 /* Pods-WhaleNotificationCenterExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhaleNotificationCenterExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		A54E6138546953F7D1AA547ECB0E521F /* Pods-WhaleNotificationCenterExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhaleNotificationCenterExampleTests-dummy.m"; sourceTree = "<group>"; };
+		A6DA3DE4F59971EC457A94AF8752551C /* WhaleNotificationCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WhaleNotificationCenter-dummy.m"; sourceTree = "<group>"; };
+		ACFD4A026761C7FC5784646E2790AF9E /* KeyboardStatusNotifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardStatusNotifications.swift; path = Source/WhaleNotificationCenter/Keyboard/KeyboardStatusNotifications.swift; sourceTree = "<group>"; };
+		B04011865675232620613A4A8E7568C2 /* DefaultWhaleDisposeBagManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultWhaleDisposeBagManager.swift; path = Source/WhaleNotificationCenter/DisposeBag/DefaultWhaleDisposeBagManager.swift; sourceTree = "<group>"; };
+		B3087B1EF28D59E030CD39907AB17462 /* WhaleNotifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhaleNotifiable.swift; path = Source/WhaleNotificationCenter/Notification/WhaleNotifiable.swift; sourceTree = "<group>"; };
+		B987485F847109266BFB2EFB3C230966 /* WhaleNotificationCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WhaleNotificationCenter.framework; path = WhaleNotificationCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC13DC82FE18A5AA64874E78B3B34F7F /* WhaleNotifiable+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhaleNotifiable+Extension.swift"; path = "Source/WhaleNotificationCenter/Notification/WhaleNotifiable+Extension.swift"; sourceTree = "<group>"; };
+		C11DAD5FEB7510D882DEDC55C0C24FA6 /* WhaleNotificationCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WhaleNotificationCenter-umbrella.h"; sourceTree = "<group>"; };
+		C3D02DC064CF33A64C5D71055493C224 /* WhaleNotificationCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WhaleNotificationCenter-prefix.pch"; sourceTree = "<group>"; };
+		C9DAD7E890F10252A2276B7B6E64E745 /* Pods-WhaleNotificationCenterExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhaleNotificationCenterExample-umbrella.h"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E111DB7A09BB1D60C0454D7B680F48C9 /* Pods-WhaleNotificationCenterExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhaleNotificationCenterExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E68EF8D8338D5C0FBA15D68F0F385A84 /* Pods-WhaleNotificationCenterExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhaleNotificationCenterExample.modulemap"; sourceTree = "<group>"; };
-		E6B6B2BA002B8F2D66D1639B81A5B0FD /* Pods-WhaleNotificationCenterExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleNotificationCenterExampleTests-Info.plist"; sourceTree = "<group>"; };
-		F3C9EC1C24BEA3725DB5CD978FFF768F /* Pods-WhaleNotificationCenterExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhaleNotificationCenterExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F60C27D2E1C1DCCE0FE2B93FBC5B5643 /* Pods-WhaleNotificationCenterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleNotificationCenterExample.release.xcconfig"; sourceTree = "<group>"; };
+		D21CBBC0177317C4E388734A2DA173C8 /* Pods-WhaleNotificationCenterExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleNotificationCenterExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D498F1398D2D90E22583889578DD77F9 /* Pods-WhaleNotificationCenterExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhaleNotificationCenterExample.modulemap"; sourceTree = "<group>"; };
+		DAED2FCFA8B4D6686032882BF36A95F0 /* Pods-WhaleNotificationCenterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleNotificationCenterExample.debug.xcconfig"; sourceTree = "<group>"; };
+		EF3C1CB2A3A6552E817964AE141F575C /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleNotificationCenterExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F83A9F816121B282C8704DC2954D2F60 /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleNotificationCenterExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		96C26F90052C44197E09DB9B2755C04E /* Frameworks */ = {
+		794DAEB24344A69C6EF77D3825AA91C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABA90CE3E37FB0B8E2A876B0F461B8A2 /* Foundation.framework in Frameworks */,
+				E775FB33EEAF81BF445DAF742BA7772D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,32 +99,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D435F7448CC66073DAED18CD3DB59942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9011D6726F18574A78BCA3551ADD3662 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5CF8A723771EE58291C0EC48B74A7183 /* Pods-WhaleNotificationCenterExampleTests */ = {
+		40AA8800BB0AD0C72C6343B653D2866A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74AA3A95FDCBD3278C0B1F7AB0AB5D4D /* Pods-WhaleNotificationCenterExampleTests.modulemap */,
-				E111DB7A09BB1D60C0454D7B680F48C9 /* Pods-WhaleNotificationCenterExampleTests-acknowledgements.markdown */,
-				1AF508197DE1943E1AB221E93B85F9EC /* Pods-WhaleNotificationCenterExampleTests-acknowledgements.plist */,
-				58B9D9EDDF9D62AE013CD35DB2D09656 /* Pods-WhaleNotificationCenterExampleTests-dummy.m */,
-				E6B6B2BA002B8F2D66D1639B81A5B0FD /* Pods-WhaleNotificationCenterExampleTests-Info.plist */,
-				BFC046B76113E1D2A72ABABBC69B4CD3 /* Pods-WhaleNotificationCenterExampleTests-umbrella.h */,
-				3946AB1C244986E57EC6420350A55090 /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */,
-				5B2C7068CC114068C2DC7F98280256C0 /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */,
+				31A1E7E72FC677D43E06E057D794D37A /* Pods_WhaleNotificationCenterExample.framework */,
+				9D5F0E0901F73B99ABAC43AF632C137D /* Pods_WhaleNotificationCenterExampleTests.framework */,
+				B987485F847109266BFB2EFB3C230966 /* WhaleNotificationCenter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F78DA02966A84D951CDCB660447828D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92E2D9934271E0B70CFBCE8E207AC070 /* Pods-WhaleNotificationCenterExample */,
+				70466B714504ADAA0F5073BD3EA7035C /* Pods-WhaleNotificationCenterExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		70466B714504ADAA0F5073BD3EA7035C /* Pods-WhaleNotificationCenterExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				960E83E3059E05F42DDEC6AB4766F441 /* Pods-WhaleNotificationCenterExampleTests.modulemap */,
+				68CDE5ABD33B7139261AB3912DE4EEEB /* Pods-WhaleNotificationCenterExampleTests-acknowledgements.markdown */,
+				D21CBBC0177317C4E388734A2DA173C8 /* Pods-WhaleNotificationCenterExampleTests-acknowledgements.plist */,
+				A54E6138546953F7D1AA547ECB0E521F /* Pods-WhaleNotificationCenterExampleTests-dummy.m */,
+				3F44140DCF2F516369CE23A8B5CBD54A /* Pods-WhaleNotificationCenterExampleTests-Info.plist */,
+				85A608171FE2622EF147DA4981E339D4 /* Pods-WhaleNotificationCenterExampleTests-umbrella.h */,
+				F83A9F816121B282C8704DC2954D2F60 /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */,
+				EF3C1CB2A3A6552E817964AE141F575C /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */,
 			);
 			name = "Pods-WhaleNotificationCenterExampleTests";
 			path = "Target Support Files/Pods-WhaleNotificationCenterExampleTests";
 			sourceTree = "<group>";
 		};
-		65395A70E8F556547FFE943CDE567178 /* Products */ = {
+		92E2D9934271E0B70CFBCE8E207AC070 /* Pods-WhaleNotificationCenterExample */ = {
 			isa = PBXGroup;
 			children = (
-				B1D6B4589D2655C0BBCDEDF014FCB46B /* Pods_WhaleNotificationCenterExample.framework */,
-				91D6AB567D543137D07F90A55C674460 /* Pods_WhaleNotificationCenterExampleTests.framework */,
+				D498F1398D2D90E22583889578DD77F9 /* Pods-WhaleNotificationCenterExample.modulemap */,
+				97804745F51DFEF1B5DCD63C86DC2D47 /* Pods-WhaleNotificationCenterExample-acknowledgements.markdown */,
+				22B53AD048D3BE40E1AFEAF7C6B9F078 /* Pods-WhaleNotificationCenterExample-acknowledgements.plist */,
+				85E95ABEAF21C633AA4D1D3BBFC7C8CA /* Pods-WhaleNotificationCenterExample-dummy.m */,
+				3DFDA6C7152361EA717DAAFA536D3E31 /* Pods-WhaleNotificationCenterExample-frameworks.sh */,
+				605C9BAD6F188944869A9B6F70187D2E /* Pods-WhaleNotificationCenterExample-Info.plist */,
+				C9DAD7E890F10252A2276B7B6E64E745 /* Pods-WhaleNotificationCenterExample-umbrella.h */,
+				DAED2FCFA8B4D6686032882BF36A95F0 /* Pods-WhaleNotificationCenterExample.debug.xcconfig */,
+				9549C6FA84F8BF6A43F128157032CD15 /* Pods-WhaleNotificationCenterExample.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-WhaleNotificationCenterExample";
+			path = "Target Support Files/Pods-WhaleNotificationCenterExample";
 			sourceTree = "<group>";
 		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
@@ -101,29 +170,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		B933019525DE4F50499299A6DCD700AF /* Pods-WhaleNotificationCenterExample */ = {
+		B01C73B8469E5E980B9C93423D7FABDE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E68EF8D8338D5C0FBA15D68F0F385A84 /* Pods-WhaleNotificationCenterExample.modulemap */,
-				F3C9EC1C24BEA3725DB5CD978FFF768F /* Pods-WhaleNotificationCenterExample-acknowledgements.markdown */,
-				3BBCD66D4DB093F68DB8BE837835F7A9 /* Pods-WhaleNotificationCenterExample-acknowledgements.plist */,
-				7F1CA2C310B79FF09897327F615F8814 /* Pods-WhaleNotificationCenterExample-dummy.m */,
-				0D176F017E5FBECB9BD30C187FFB09C1 /* Pods-WhaleNotificationCenterExample-Info.plist */,
-				2A30B24931826426C279DB9C3ABAEF22 /* Pods-WhaleNotificationCenterExample-umbrella.h */,
-				6F8A986BC20F5E3423CE6C304C60FA2F /* Pods-WhaleNotificationCenterExample.debug.xcconfig */,
-				F60C27D2E1C1DCCE0FE2B93FBC5B5643 /* Pods-WhaleNotificationCenterExample.release.xcconfig */,
+				770AA1017F4F1B4DC5BD26FC1B055E24 /* WhaleNotificationCenter.modulemap */,
+				637157B96839D63D56B229B22C6976BC /* WhaleNotificationCenter.xcconfig */,
+				A6DA3DE4F59971EC457A94AF8752551C /* WhaleNotificationCenter-dummy.m */,
+				6FEB75103895DA20E947E434DD2A551D /* WhaleNotificationCenter-Info.plist */,
+				C3D02DC064CF33A64C5D71055493C224 /* WhaleNotificationCenter-prefix.pch */,
+				C11DAD5FEB7510D882DEDC55C0C24FA6 /* WhaleNotificationCenter-umbrella.h */,
 			);
-			name = "Pods-WhaleNotificationCenterExample";
-			path = "Target Support Files/Pods-WhaleNotificationCenterExample";
-			sourceTree = "<group>";
-		};
-		BE6B83BD857ABC92F7FC87A99C84E1F0 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B933019525DE4F50499299A6DCD700AF /* Pods-WhaleNotificationCenterExample */,
-				5CF8A723771EE58291C0EC48B74A7183 /* Pods-WhaleNotificationCenterExampleTests */,
-			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/WhaleNotificationCenter";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -131,8 +189,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				65395A70E8F556547FFE943CDE567178 /* Products */,
-				BE6B83BD857ABC92F7FC87A99C84E1F0 /* Targets Support Files */,
+				D6C327C8957F79ADD8C0061E00E3ED5B /* Pods */,
+				40AA8800BB0AD0C72C6343B653D2866A /* Products */,
+				5F78DA02966A84D951CDCB660447828D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,14 +203,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D6C327C8957F79ADD8C0061E00E3ED5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED1980107C46FF6C312FFF1F398BAFFA /* WhaleNotificationCenter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED1980107C46FF6C312FFF1F398BAFFA /* WhaleNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				B04011865675232620613A4A8E7568C2 /* DefaultWhaleDisposeBagManager.swift */,
+				6AFD1A61E2409F283B05E97552614479 /* DefaultWhaleNotificationRouter.swift */,
+				ACFD4A026761C7FC5784646E2790AF9E /* KeyboardStatusNotifications.swift */,
+				B3087B1EF28D59E030CD39907AB17462 /* WhaleNotifiable.swift */,
+				BC13DC82FE18A5AA64874E78B3B34F7F /* WhaleNotifiable+Extension.swift */,
+				9B48927C8659BEF11711BEC112B758FA /* WhaleNotificationCenter.h */,
+				2DAD2990482457BD1D208D182E9C30A1 /* WhaleNotificationDisposeBagManager.swift */,
+				46B3AC1BDB471065B4C85A6AC87638E9 /* WhaleNotificationRouter.swift */,
+				B01C73B8469E5E980B9C93423D7FABDE /* Support Files */,
+			);
+			name = WhaleNotificationCenter;
+			path = WhaleNotificationCenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		76715BBB2616DF214838F1972569C30B /* Headers */ = {
+		50CDC6F4962DADE46C044EC93ABCACB0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ACEE326753462ACB7BD5AE9E12AC6D /* Pods-WhaleNotificationCenterExample-umbrella.h in Headers */,
+				5A1FA3FE6B9DBD193EA8E4B8732CC3A9 /* Pods-WhaleNotificationCenterExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +244,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BECC39A382882537D4B3852D6161141C /* Pods-WhaleNotificationCenterExampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E05A032715E8B87276E3A044C8896C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A2F062ED8D74F4D261443418A716C1 /* WhaleNotificationCenter-umbrella.h in Headers */,
+				4ADC9C477CC030C9260DD68CA062E2F8 /* WhaleNotificationCenter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,25 +275,44 @@
 			);
 			name = "Pods-WhaleNotificationCenterExampleTests";
 			productName = "Pods-WhaleNotificationCenterExampleTests";
-			productReference = 91D6AB567D543137D07F90A55C674460 /* Pods_WhaleNotificationCenterExampleTests.framework */;
+			productReference = 9D5F0E0901F73B99ABAC43AF632C137D /* Pods_WhaleNotificationCenterExampleTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EBA8B0C61867DA386B7287A0E4547642 /* Pods-WhaleNotificationCenterExample */ = {
+		B0ED2A30E7425CFBDBD7FB09B61E9CCE /* WhaleNotificationCenter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55D060DFA1A597D198F6E65C61F10572 /* Build configuration list for PBXNativeTarget "Pods-WhaleNotificationCenterExample" */;
+			buildConfigurationList = 24ABB2197F6E3BB2495A3FD225DA766D /* Build configuration list for PBXNativeTarget "WhaleNotificationCenter" */;
 			buildPhases = (
-				76715BBB2616DF214838F1972569C30B /* Headers */,
-				F9D3304AD1DA5CE95A001455EC1F2286 /* Sources */,
-				96C26F90052C44197E09DB9B2755C04E /* Frameworks */,
-				9C5C5C9AE84F1D4056E3681E8F7B732D /* Resources */,
+				C3E05A032715E8B87276E3A044C8896C /* Headers */,
+				8B802974C0643829A95C4C60997781AC /* Sources */,
+				D435F7448CC66073DAED18CD3DB59942 /* Frameworks */,
+				256B3E83B2C3279E074B8CAC6057CC97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = WhaleNotificationCenter;
+			productName = WhaleNotificationCenter;
+			productReference = B987485F847109266BFB2EFB3C230966 /* WhaleNotificationCenter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C98E9AD2C2DE9002CFEB6BA4DF9C50ED /* Pods-WhaleNotificationCenterExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B315ADD81933CB037A47A4B884BEB12 /* Build configuration list for PBXNativeTarget "Pods-WhaleNotificationCenterExample" */;
+			buildPhases = (
+				50CDC6F4962DADE46C044EC93ABCACB0 /* Headers */,
+				EF2220820822B73EBF576E0B89C3CF3A /* Sources */,
+				794DAEB24344A69C6EF77D3825AA91C0 /* Frameworks */,
+				6A925C602A8DDECB808B4DD3E62FAF3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D95920D434A24E87C70E72865B8F8C /* PBXTargetDependency */,
+			);
 			name = "Pods-WhaleNotificationCenterExample";
 			productName = "Pods-WhaleNotificationCenterExample";
-			productReference = B1D6B4589D2655C0BBCDEDF014FCB46B /* Pods_WhaleNotificationCenterExample.framework */;
+			productReference = 31A1E7E72FC677D43E06E057D794D37A /* Pods_WhaleNotificationCenterExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -220,17 +332,25 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 65395A70E8F556547FFE943CDE567178 /* Products */;
+			productRefGroup = 40AA8800BB0AD0C72C6343B653D2866A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EBA8B0C61867DA386B7287A0E4547642 /* Pods-WhaleNotificationCenterExample */,
+				C98E9AD2C2DE9002CFEB6BA4DF9C50ED /* Pods-WhaleNotificationCenterExample */,
 				4EB746272A9B96DCA406228B5A70C304 /* Pods-WhaleNotificationCenterExampleTests */,
+				B0ED2A30E7425CFBDBD7FB09B61E9CCE /* WhaleNotificationCenter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		256B3E83B2C3279E074B8CAC6057CC97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FC37674AFDCAB7DFB9F67F6E9B9FE76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,7 +358,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C5C5C9AE84F1D4056E3681E8F7B732D /* Resources */ = {
+		6A925C602A8DDECB808B4DD3E62FAF3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,6 +368,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8B802974C0643829A95C4C60997781AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415A9DDC7AC2CAF14CB1E923DA44D978 /* DefaultWhaleDisposeBagManager.swift in Sources */,
+				1007E1BC24347F9D24748020F85F808D /* DefaultWhaleNotificationRouter.swift in Sources */,
+				42B1112E7704EAACB0BEA31A45A9EF07 /* KeyboardStatusNotifications.swift in Sources */,
+				CDE12FEAD5F52388AA0B7207F5F3F151 /* WhaleNotifiable+Extension.swift in Sources */,
+				34D17B3597469ECE927DC40FF4704F1B /* WhaleNotifiable.swift in Sources */,
+				EE52204CEC933757C9A13C2119A8E9B8 /* WhaleNotificationCenter-dummy.m in Sources */,
+				A1AD366AAF99377496F7F8B2F791D79B /* WhaleNotificationDisposeBagManager.swift in Sources */,
+				E5EBB7DBDC9D7A51A307C974A80159A3 /* WhaleNotificationRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEFCB908D1E1C268C93BF250B4C073E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,29 +391,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9D3304AD1DA5CE95A001455EC1F2286 /* Sources */ = {
+		EF2220820822B73EBF576E0B89C3CF3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				644F85B550598ADDD4780E582C048368 /* Pods-WhaleNotificationCenterExample-dummy.m in Sources */,
+				3A85515813E25027F6D2DABC52D868B3 /* Pods-WhaleNotificationCenterExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		81D95920D434A24E87C70E72865B8F8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WhaleNotificationCenter;
+			target = B0ED2A30E7425CFBDBD7FB09B61E9CCE /* WhaleNotificationCenter */;
+			targetProxy = C6D1B8600D6C0610F6BF4708AE8C4048 /* PBXContainerItemProxy */;
+		};
 		D0DDD265A6F390954BE052CD9274C8A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-WhaleNotificationCenterExample";
-			target = EBA8B0C61867DA386B7287A0E4547642 /* Pods-WhaleNotificationCenterExample */;
+			target = C98E9AD2C2DE9002CFEB6BA4DF9C50ED /* Pods-WhaleNotificationCenterExample */;
 			targetProxy = F06C0E111918E304378901F416A12275 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		842449FF23BC1BC8DC9F9B0FC4BCFE16 /* Release */ = {
+		7E70A02C83168B27837AD0E640075F39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F60C27D2E1C1DCCE0FE2B93FBC5B5643 /* Pods-WhaleNotificationCenterExample.release.xcconfig */;
+			baseConfigurationReference = DAED2FCFA8B4D6686032882BF36A95F0 /* Pods-WhaleNotificationCenterExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -309,11 +450,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -375,9 +515,44 @@
 			};
 			name = Release;
 		};
+		A3CD70F173730D0001EB5D3C05D03384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 637157B96839D63D56B229B22C6976BC /* WhaleNotificationCenter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WhaleNotificationCenter/WhaleNotificationCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WhaleNotificationCenter/WhaleNotificationCenter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WhaleNotificationCenter/WhaleNotificationCenter.modulemap";
+				PRODUCT_MODULE_NAME = WhaleNotificationCenter;
+				PRODUCT_NAME = WhaleNotificationCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		ADCDC1AF6C6796F3AA85F90404347ABD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B2C7068CC114068C2DC7F98280256C0 /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */;
+			baseConfigurationReference = EF3C1CB2A3A6552E817964AE141F575C /* Pods-WhaleNotificationCenterExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -414,12 +589,10 @@
 			};
 			name = Release;
 		};
-		B4CFA8A0278B93D2722FA6C097F7098D /* Debug */ = {
+		B527F9BC1B13B0E4D926E08789004AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F8A986BC20F5E3423CE6C304C60FA2F /* Pods-WhaleNotificationCenterExample.debug.xcconfig */;
+			baseConfigurationReference = 637157B96839D63D56B229B22C6976BC /* WhaleNotificationCenter.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -429,32 +602,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WhaleNotificationCenter/WhaleNotificationCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WhaleNotificationCenter/WhaleNotificationCenter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/WhaleNotificationCenter/WhaleNotificationCenter.modulemap";
+				PRODUCT_MODULE_NAME = WhaleNotificationCenter;
+				PRODUCT_NAME = WhaleNotificationCenter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		BE85795FF4696155862E620A402F9A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3946AB1C244986E57EC6420350A55090 /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */;
+			baseConfigurationReference = F83A9F816121B282C8704DC2954D2F60 /* Pods-WhaleNotificationCenterExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -554,9 +727,57 @@
 			};
 			name = Debug;
 		};
+		E0D25C3C0AA86D4B5B0197289029A1BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9549C6FA84F8BF6A43F128157032CD15 /* Pods-WhaleNotificationCenterExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhaleNotificationCenterExample/Pods-WhaleNotificationCenterExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		24ABB2197F6E3BB2495A3FD225DA766D /* Build configuration list for PBXNativeTarget "WhaleNotificationCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CD70F173730D0001EB5D3C05D03384 /* Debug */,
+				B527F9BC1B13B0E4D926E08789004AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -566,11 +787,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55D060DFA1A597D198F6E65C61F10572 /* Build configuration list for PBXNativeTarget "Pods-WhaleNotificationCenterExample" */ = {
+		6B315ADD81933CB037A47A4B884BEB12 /* Build configuration list for PBXNativeTarget "Pods-WhaleNotificationCenterExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4CFA8A0278B93D2722FA6C097F7098D /* Debug */,
-				842449FF23BC1BC8DC9F9B0FC4BCFE16 /* Release */,
+				7E70A02C83168B27837AD0E640075F39 /* Debug */,
+				E0D25C3C0AA86D4B5B0197289029A1BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

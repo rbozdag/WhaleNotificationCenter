@@ -1,0 +1,23 @@
+{
+  "name": "WhaleNotificationCenter",
+  "version": "1.1.2",
+  "summary": "Swift NSNotificationCenter Fix Library",
+  "description": "Swift NSNotificationCenter Fix Library",
+  "homepage": "https://github.com/rbozdag",
+  "license": {
+    "type": "BSD",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "rbozdag": "bozdag.rahmi@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/rbozdag/WhaleNotificationCenter.git",
+    "tag": "1.1.2"
+  },
+  "swift_version": "4.2",
+  "source_files": "Source/WhaleNotificationCenter/**/*.{swift,h,m}",
+  "platforms": {
+    "ios": "9.0"
+  }
+}

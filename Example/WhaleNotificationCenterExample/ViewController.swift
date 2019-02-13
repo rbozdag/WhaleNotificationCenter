@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import WhaleNotificationCenter
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var labelLoginInfo: UILabel!
+    @IBOutlet weak var labelKeyboardStatus: UILabel!
     var counter = 1
 
     override func viewDidLoad() {
@@ -19,39 +21,38 @@ class ViewController: UIViewController {
         LoginStatus.observe(target: self) { [weak self] loginStatus in
             switch loginStatus {
             case .login(let user):
-                self?.label.text = "Login: " + user.name
+                self?.labelLoginInfo.text = "Login: " + user.name
             case .logout:
-                self?.label.text = "Logout"
+                self?.labelLoginInfo.text = "Logout"
             }
         }
 
         KeyboardNotifications.DidChangeFrame.observe(target: self) { [weak self] data in
-            self?.label.text = "Keyboard DidChangeFrame"
-        }
-        
-        KeyboardNotifications.DidHide.observe(target: self) { [weak self] data in
-            self?.label.text = "Keyboard DidHide"
-        }
-        
-        KeyboardNotifications.DidShow.observe(target: self) { [weak self] data in
-            self?.label.text = "Keyboard DidShow"
-        }
-        
-        KeyboardNotifications.WillChangeFrame.observe(target: self) { [weak self] data in
-            self?.label.text = "Keyboard WillChangeFrame"
-        }
-        
-        KeyboardNotifications.WillHide.observe(target: self) { [weak self] data in
-            self?.label.text = "Keyboard WillHide"
-        }
-        
-        KeyboardNotifications.WillShow.observe(target: self) { [weak self] data in
-            self?.label.text = "Keyboard WillShow"
+            self?.labelKeyboardStatus.text = "Keyboard DidChangeFrame"
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) { [weak self] in
-            self?.view.endEditing(true)
+        KeyboardNotifications.DidHide.observe(target: self) { [weak self] data in
+            self?.labelKeyboardStatus.text = "Keyboard DidHide"
         }
+
+        KeyboardNotifications.DidShow.observe(target: self) { [weak self] data in
+            self?.labelKeyboardStatus.text = "Keyboard DidShow"
+        }
+
+        KeyboardNotifications.WillChangeFrame.observe(target: self) { [weak self] data in
+            self?.labelKeyboardStatus.text = "Keyboard WillChangeFrame"
+        }
+
+        KeyboardNotifications.WillHide.observe(target: self) { [weak self] data in
+            self?.labelKeyboardStatus.text = "Keyboard WillHide"
+        }
+
+        KeyboardNotifications.WillShow.observe(target: self) { [weak self] data in
+            self?.labelKeyboardStatus.text = "Keyboard WillShow"
+        }
+
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     @IBAction func loginAction(_ sender: Any?) {
@@ -63,6 +64,10 @@ class ViewController: UIViewController {
 
     @IBAction func logoutAction(_ sender: Any?) {
         LoginStatus.logout.broadcast()
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 
 }
