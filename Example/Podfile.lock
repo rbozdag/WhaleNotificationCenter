@@ -1,5 +1,5 @@
 PODS:
-  - WhaleNotificationCenter (1.1.2)
+  - WhaleNotificationCenter (1.2.0)
 
 DEPENDENCIES:
   - WhaleNotificationCenter (from `https://github.com/rbozdag/WhaleNotificationCenter.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   WhaleNotificationCenter:
-    :commit: 295f3a54c45df2789f669f50a2205dadd01efc9d
+    :commit: 79026a795443ab338848d53a95af538a44976f60
     :git: https://github.com/rbozdag/WhaleNotificationCenter.git
 
 SPEC CHECKSUMS:
-  WhaleNotificationCenter: 54511345a584add2c4904be0fdaf4ce7c4d92f03
+  WhaleNotificationCenter: e32a1a3e6f8db73310604d4a51039a33f4355dee
 
 PODFILE CHECKSUM: 6abe8213ae0ea49d37d16717d3c940bee5f19dc7
 

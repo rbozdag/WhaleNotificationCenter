@@ -64,3 +64,10 @@ let user = User(name: "user_name")
 LoginStatus.login(user).broadcast()
 ```
 
+Observe Keyboard Status.
+```swift
+KeyboardNotifications.DidShow.observe(target: self) { [weak self] data in
+    self?.labelKeyboardStatus.text = "Keyboard DidShow"
+}
+```
+

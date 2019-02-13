@@ -27,28 +27,41 @@ class ViewController: UIViewController {
             }
         }
 
-        KeyboardNotifications.DidChangeFrame.observe(target: self) { [weak self] data in
+        KeyboardNotifications.didChangeFrame.observe(target: self) { [weak self] data in
             self?.labelKeyboardStatus.text = "Keyboard DidChangeFrame"
         }
 
-        KeyboardNotifications.DidHide.observe(target: self) { [weak self] data in
+        KeyboardNotifications.didHide.observe(target: self) { [weak self] data in
             self?.labelKeyboardStatus.text = "Keyboard DidHide"
         }
 
-        KeyboardNotifications.DidShow.observe(target: self) { [weak self] data in
+        KeyboardNotifications.didShow.observe(target: self) { [weak self] data in
             self?.labelKeyboardStatus.text = "Keyboard DidShow"
         }
 
-        KeyboardNotifications.WillChangeFrame.observe(target: self) { [weak self] data in
+        KeyboardNotifications.willChangeFrame.observe(target: self) { [weak self] data in
             self?.labelKeyboardStatus.text = "Keyboard WillChangeFrame"
         }
 
-        KeyboardNotifications.WillHide.observe(target: self) { [weak self] data in
+        KeyboardNotifications.willHide.observe(target: self) { [weak self] data in
             self?.labelKeyboardStatus.text = "Keyboard WillHide"
         }
 
-        KeyboardNotifications.WillShow.observe(target: self) { [weak self] data in
+        KeyboardNotifications.willShow.observe(target: self) { [weak self] data in
             self?.labelKeyboardStatus.text = "Keyboard WillShow"
+        }
+        
+        UIApplicationNotifications.didBecomeActive.observe(target: self) {
+            print("UIApplicationNotifications", "didBecomeActive")
+        }
+        UIApplicationNotifications.didEnterBackground.observe(target: self) {
+            print("UIApplicationNotifications", "didEnterBackground")
+        }
+        UIApplicationNotifications.willEnterForeground.observe(target: self) {
+            print("UIApplicationNotifications", "willEnterForeground")
+        }
+        UIApplicationNotifications.willTerminate.observe(target: self) {
+            print("UIApplicationNotifications", "willTerminate")
         }
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))

@@ -27,7 +27,7 @@ public struct KeyboardNotifications {
         }
     }
 
-    public class WillShow: KeyboardNotification, WhaleNotifiable {
+    public class willShow: KeyboardNotification, WhaleNotifiable {
         public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardWillShowNotification
@@ -37,7 +37,7 @@ public struct KeyboardNotifications {
         }
     }
 
-    public class DidShow: KeyboardNotification, WhaleNotifiable {
+    public class didShow: KeyboardNotification, WhaleNotifiable {
         public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardDidShowNotification
@@ -47,7 +47,7 @@ public struct KeyboardNotifications {
         }
     }
 
-    public class WillHide: KeyboardNotification, WhaleNotifiable {
+    public class willHide: KeyboardNotification, WhaleNotifiable {
         public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardWillHideNotification
@@ -57,7 +57,7 @@ public struct KeyboardNotifications {
         }
     }
 
-    public class DidHide: KeyboardNotification, WhaleNotifiable {
+    public class didHide: KeyboardNotification, WhaleNotifiable {
         public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardDidHideNotification
@@ -67,7 +67,7 @@ public struct KeyboardNotifications {
         }
     }
 
-    public class DidChangeFrame: KeyboardNotification, WhaleNotifiable {
+    public class didChangeFrame: KeyboardNotification, WhaleNotifiable {
         public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardDidChangeFrameNotification
@@ -77,7 +77,7 @@ public struct KeyboardNotifications {
         }
     }
 
-    public class WillChangeFrame: KeyboardNotification, WhaleNotifiable {
+    public class willChangeFrame: KeyboardNotification, WhaleNotifiable {
         public typealias ObservedValueType = KeyboardNotification
 
         public static var notificationName: NSNotification.Name = UIResponder.keyboardWillChangeFrameNotification

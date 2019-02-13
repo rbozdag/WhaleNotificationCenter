@@ -12,10 +12,14 @@ public final class DefaultWhaleNotificationRouter: WhaleNotificationRouter {
     private let action: (Notification) -> ()
     public let isTargetAlive: () -> Bool
 
-    public init<T>(disposeBag: WhaleNotificationDisposeBagManager, target: AnyObject, decoder: @escaping (Notification) -> T?, action: @escaping (T) -> ()) {
+    public init<T>(disposeBag: WhaleNotificationDisposeBagManager, target: AnyObject, decoder: @escaping (Notification) -> T?, actionWithPrm: ((T) -> ())?, actionWithoutPrm: (() -> ())?) {
         self.action = { [weak target, weak disposeBag] notification in
-            if target != nil, let observedValue = decoder(notification) {
-                action(observedValue)
+            if target != nil {
+                if let actionWithPrm = actionWithPrm, let observedValue = decoder(notification) {
+                    actionWithPrm(observedValue)
+                } else if let actionWithoutPrm = actionWithoutPrm {
+                    actionWithoutPrm()
+                }
             } else {
                 disposeBag?.dispose()
             }
