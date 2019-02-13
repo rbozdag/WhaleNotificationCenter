@@ -64,10 +64,26 @@ let user = User(name: "user_name")
 LoginStatus.login(user).broadcast()
 ```
 
-Observe Keyboard Status.
+Observe Keyboard Statuses.
 ```swift
-KeyboardNotifications.DidShow.observe(target: self) { [weak self] data in
+KeyboardNotifications.didShow.observe(target: self) { [weak self] data in
     self?.labelKeyboardStatus.text = "Keyboard DidShow"
+}
+```
+
+Observe UIApplication Statuses.
+```swift
+UIApplicationNotifications.didBecomeActive.observe(target: self) {
+    print("UIApplicationNotifications", "didBecomeActive")
+}
+UIApplicationNotifications.didEnterBackground.observe(target: self) {
+    print("UIApplicationNotifications", "didEnterBackground")
+}
+UIApplicationNotifications.willEnterForeground.observe(target: self) {
+    print("UIApplicationNotifications", "willEnterForeground")
+}
+UIApplicationNotifications.willTerminate.observe(target: self) {
+    print("UIApplicationNotifications", "willTerminate")
 }
 ```
 
